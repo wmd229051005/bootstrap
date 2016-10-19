@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="site.css">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <!--[if it IE 9]>
+        <script src="html5shiv.min.js"></script>
+        <script src="respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="container">
+    <header class="page-header visible-sm visible-md">
+        <h1>index</h1>
+    </header>
+
+    <div>
+        <!--navbar-fixed-top:会将这个nav固定在顶部，导致header的内容被挡住，所以给body的padding-top：70px-->
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header"><!--一般有brand时候回添加这个头-->
+                    <div class="navbar-brand">
+                        <a href="#">MiniBlog</a>
+                    </div>
+                    <!--当屏幕小时，出现三条杠-->
+                    <button type="button" data-target="#divNav" data-toggle="collapse" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="divNav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-music"></span>Music</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-link"></span>Link</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-music"></span>Music</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-link"></span>Link</a></li>
+                        <li>
+                            <p class="navbar-text">Site Search</p>
+                        </li>
+                        <li>
+                            <form class="navbar-form">
+                                <input type="search" class="form-control" placeholder="Enter Search">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </form>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">子菜单1</a></li>
+                                <li><a href="#">子菜单2</a></li>
+                                <li><a href="#">子菜单3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <footer class="navbar-fixed-bottom text-center">
+        &copy;HTML
+    </footer>
+
+<script src="jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

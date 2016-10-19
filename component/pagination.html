@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="site.css">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <!--[if it IE 9]>
+        <script src="html5shiv.min.js"></script>
+        <script src="respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="container">
+    <header class="page-header visible-sm visible-md">
+        <h1>index</h1>
+    </header>
+
+    <nav>
+        <ul class="pagination">
+            <li class="previous"><a href="#">上一页</a></li>
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="url?id=2">2</a></li>
+            <li><a href="#">3</a></li>
+            <li class="next"><a>下一页</a></li>
+        </ul>
+    </nav>
+
+
+    <footer class="navbar-fixed-bottom text-center">
+        &copy;HTML
+    </footer>
+
+<script src="jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $("li a").click(function(){
+        $("li").removeClass();
+         $(this).parent().addClass("active");
+    });
+</script>
+</body>
+</html>
